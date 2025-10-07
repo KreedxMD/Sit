@@ -3,89 +3,111 @@ body {
     padding: 0;
     font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
     min-height: 100vh;
-    background: linear-gradient(135deg, rgba(35, 37, 38, 0.7) 0%, rgba(65, 67, 69, 0.7) 100%), url('https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80');
+    background: linear-gradient(135deg, rgba(20, 30, 50, 0.8) 0%, rgba(40, 60, 100, 0.8) 100%), url('https://i.imgur.com/zNTLwaV.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     overflow-x: hidden;
+    color: #f0f0f0;
 }
 
 .portfolio-bg {
     min-height: 100vh;
-    background: linear-gradient(120deg, rgba(30, 60, 114, 0.8) 0%, rgba(42, 82, 152, 0.8) 100%);
+    background: linear-gradient(120deg, rgba(30, 40, 70, 0.9) 0%, rgba(50, 70, 120, 0.9) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 .card {
-    border-radius: 1rem;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    transition: transform 0.3s ease;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(31, 38, 135, 0.5);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(31, 38, 135, 0.7);
 }
 
-h1, .display-4 {
+h1, .display-3 {
     color: #fff;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.35);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    font-size: 3rem;
+}
+
+.lead {
+    font-size: 1.5rem;
+    line-height: 1.6;
 }
 
 .text-warning {
-    color: #ffc107 !important;
+    color: #ffca28 !important;
 }
 
 .custom-btn {
-    background: linear-gradient(45deg, #232526, #2a5298);
+    background: linear-gradient(45deg, #ff6f61, #6b48ff);
     border: none;
-    padding: 10px 20px;
+    padding: 15px 30px;
     color: #fff;
     font-weight: bold;
-    border-radius: 25px;
+    border-radius: 30px;
     text-decoration: none;
-    transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
 }
 
 .custom-btn:hover {
-    background: linear-gradient(45deg, #2a5298, #1e3c72);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #6b48ff, #ff6f61);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 .custom-btn i {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+}
+
+.d-flex img {
+    transition: transform 0.3s ease;
+}
+
+.d-flex img:hover {
+    transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
-    .display-4 {
+    .display-3 {
         font-size: 2rem;
     }
     .lead {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .col-12 {
         flex: 0 0 100%;
         max-width: 100%;
     }
     .card {
-        margin-top: 20px;
+        margin-top: 30px;
     }
     img[alt="Gatinho"] {
-        max-width: 150px;
+        max-width: 180px;
         height: auto;
     }
     .d-flex img {
-        max-width: 30px;
+        max-width: 35px;
         height: auto;
+    }
+    .custom-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
     }
 }
 
