@@ -1,15 +1,13 @@
-
 body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
     min-height: 100vh;
-    background: linear-gradient(135deg, #232526 0%, #414345 100%), url('https://i.postimg.cc/YCH8MsDG/images.jpg');
+    background: linear-gradient(135deg, rgba(35, 37, 38, 0.7) 0%, rgba(65, 67, 69, 0.7) 100%), url('https://i.postimg.cc/YCH8MsDG/images.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-/* ...existing code... */
 }
 
 .portfolio-bg {
@@ -18,18 +16,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px 0;
 }
 
 .card {
     border-radius: 1rem;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(4px);
-    border: 1px solid rgba(255,255,255,0.18);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 h1, .display-4 {
     color: #fff;
-    text-shadow: 2px 2px 8px #00000055;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 .text-warning {
@@ -44,4 +43,37 @@ h1, .display-4 {
 .btn-dark:hover {
     background: #2a5298;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+    .lead {
+        font-size: 1rem;
+    }
+    .col-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .card {
+        margin-top: 20px;
+    }
+    img[alt="Gatinho"] {
+        max-width: 150px;
+        height: auto;
+    }
+    .d-flex img {
+        max-width: 30px;
+        height: auto;
+    }
+}
+
+html {
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
