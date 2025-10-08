@@ -16,16 +16,16 @@ body {
     min-height: 100vh;
     background: linear-gradient(120deg, rgba(30, 40, 70, 0.9) 0%, rgba(50, 70, 120, 0.9) 100%);
     display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    padding: 60px 0; /* Aumentei padding para mais espaço */
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
     width: 100%;
 }
 
 .container {
-    max-width: 1300px; /* Aumentei para dar mais espaço */
+    max-width: 1300px;
     width: 100%;
-    padding: 0 50px; /* Aumentei padding lateral */
+    padding: 0 60px;
 }
 
 .card {
@@ -34,11 +34,11 @@ body {
     backdrop-filter: blur(6px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 20px;
+    padding: 25px;
 }
 
 .card-body {
-    padding: 25px;
+    padding: 30px;
 }
 
 .card:hover {
@@ -49,13 +49,13 @@ body {
 h1, .display-3 {
     color: #fff;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-    font-size: 4.5rem; /* Aumentei bastante para legibilidade */
-    line-height: 1.4; /* Ajustei para evitar sobreposição */
+    font-size: 4.5rem;
+    line-height: 1.4;
 }
 
 .lead {
-    font-size: 2.2rem; /* Aumentei para melhor leitura */
-    line-height: 1.7; /* Mais espaço entre linhas */
+    font-size: 2.2rem;
+    line-height: 1.7;
 }
 
 .text-warning {
@@ -65,15 +65,15 @@ h1, .display-3 {
 .custom-btn {
     background: linear-gradient(45deg, #ff6f61, #6b48ff);
     border: none;
-    padding: 20px 40px; /* Aumentei padding */
+    padding: 20px 40px;
     color: #fff;
     font-weight: bold;
-    border-radius: 35px; /* Aumentei borda */
+    border-radius: 35px;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    gap: 20px; /* Mais espaço entre texto e ícone */
-    font-size: 1.8rem; /* Aumentei fonte do botão */
+    gap: 20px;
+    font-size: 1.8rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: all 0.4s ease;
 }
@@ -85,7 +85,11 @@ h1, .display-3 {
 }
 
 .custom-btn i {
-    font-size: 2rem; /* Aumentei ícone */
+    font-size: 2rem;
+}
+
+.github-btn {
+    margin-top: 20px; /* Adiciona espaço entre o botão e a descrição */
 }
 
 .d-flex img {
@@ -159,10 +163,10 @@ h1, .display-3 {
 
 @media (min-width: 769px) {
     .card {
-        margin-top: 40px; /* Mais espaço entre cards */
+        margin-top: 40px;
     }
     .row {
-        margin-bottom: 50px; /* Mais espaço entre seções */
+        margin-bottom: 50px;
     }
     .portfolio-bg {
         align-items: center;
@@ -170,7 +174,7 @@ h1, .display-3 {
         min-height: 100vh;
     }
     .container {
-        padding: 0 60px; /* Aumentei padding lateral */
+        padding: 0 60px;
     }
     h1, .display-3 {
         font-size: 4.5rem;
@@ -186,10 +190,17 @@ h1, .display-3 {
         font-size: 2rem;
     }
     .card-body {
-        padding: 30px; /* Mais espaço interno */
+        padding: 30px;
     }
     .card {
-        padding: 25px; /* Mais espaço externo */
+        padding: 25px;
+    }
+    .github-btn {
+        margin-top: 30px; /* Aumentei espaço no PC */
+        display: block; /* Garante que o botão ocupe a largura total e centralize */
+        margin-left: auto; /* Centraliza horizontalmente */
+        margin-right: auto; /* Centraliza horizontalmente */
+        max-width: 300px; /* Limita a largura para não esticar demais */
     }
 }
 
