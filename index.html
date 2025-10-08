@@ -24,12 +24,14 @@
                         <span title="HTML5"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40" alt="HTML5" class="img-fluid"></span>
                         <span title="CSS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" height="40" alt="CSS" class="img-fluid"></span>
                     </div>
-                    <div class="mb-5 text-center">
+                    <div class="text-center mb-5">
                         <a href="https://github.com/KreedxMD" target="_blank" class="custom-btn animated pulse infinite github-btn">Meu GitHub <i class="bi bi-github"></i></a>
+                        <a href="#" class="custom-btn animated pulse infinite contact-btn mt-3">Contato</a> <!-- Botão Contato -->
                     </div>
                 </div>
                 <div class="col-12 col-md-5 text-center mt-5 mt-md-0">
-                    <img src="https://cataas.com/cat/says/Hello%20World!%20%F0%9F%90%B1?size=50&color=white&font=Arial" alt="Gatinho" class="rounded-circle shadow-lg img-fluid animated bounceIn" id="cat-img" style="max-width: 200px; height: auto;">
+                    <!-- Placeholder para nova imagem pequena (substitua o src pelo link da sua imagem) -->
+                    <img src="https://via.placeholder.com/150" alt="Nova Imagem" class="img-fluid animated bounceIn" style="max-width: 150px; height: auto;">
                 </div>
             </div>
 
@@ -58,7 +60,7 @@
             </div>
 
             <!-- Seção Contato -->
-            <div class="row mb-5">
+            <div class="row mb-5" id="contact-section"> <!-- Adicionei ID para rolagem -->
                 <div class="col-12">
                     <div class="card bg-dark text-light shadow-lg animated fadeIn">
                         <div class="card-body">
@@ -91,6 +93,12 @@
             catImg.src = newCat;
         }
         setInterval(updateCat, 5000); // Atualiza a cada 5 segundos
+
+        // Função de rolagem para o botão Contato
+        document.querySelector('.contact-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#contact-section').scrollIntoView({ behavior: 'smooth' });
+        });
     </script>
 </body>
 </html>
