@@ -25,7 +25,7 @@ body {
 .container {
     max-width: 1200px;
     width: 100%;
-    padding: 0 15px; /* Adicionado padding lateral */
+    padding: 0 15px;
 }
 
 .card {
@@ -34,11 +34,11 @@ body {
     backdrop-filter: blur(6px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 15px; /* Adicionado padding interno nos cards */
+    padding: 15px;
 }
 
 .card-body {
-    padding: 20px; /* Mais espaço interno no corpo dos cards */
+    padding: 20px;
 }
 
 .card:hover {
@@ -50,7 +50,7 @@ h1, .display-3 {
     color: #fff;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
     font-size: 3.5rem;
-    line-height: 1.3; /* Aumentei para evitar sobreposição */
+    line-height: 1.3;
 }
 
 .lead {
@@ -117,21 +117,21 @@ h1, .display-3 {
 
 @media (max-width: 768px) {
     .display-3 {
-        font-size: 2rem; /* Reduzido para evitar corte */
+        font-size: 2rem;
     }
     .lead {
-        font-size: 1.2rem; /* Reduzido para melhor ajuste */
+        font-size: 1.2rem;
     }
     .col-12 {
         flex: 0 0 100%;
         max-width: 100%;
     }
     .card {
-        margin-top: 15px; /* Menor margem em mobile */
-        padding: 10px; /* Menos padding interno */
+        margin-top: 15px;
+        padding: 10px;
     }
     .card-body {
-        padding: 15px; /* Menos padding interno no corpo */
+        padding: 15px;
     }
     img[alt="Gatinho"] {
         max-width: 150px;
@@ -150,25 +150,46 @@ h1, .display-3 {
         font-size: 1rem;
     }
     .row {
-        margin-bottom: 10px; /* Menor espaçamento */
+        margin-bottom: 10px;
     }
     .portfolio-bg {
-        padding: 15px 0; /* Menos padding geral */
+        padding: 15px 0;
     }
 }
 
 @media (min-width: 769px) {
     .card {
-        margin-top: 20px;
+        margin-top: 30px; /* Aumentei margem para melhor espaçamento */
     }
     .row {
-        margin-bottom: 30px;
+        margin-bottom: 40px; /* Aumentei espaçamento entre seções */
     }
     .portfolio-bg {
-        align-items: center;
+        align-items: center; /* Garante centralização vertical */
+        justify-content: center; /* Garante centralização horizontal */
+        min-height: 100vh; /* Mantém a altura total */
     }
     .container {
-        padding: 0 20px;
+        padding: 0 40px; /* Aumentei padding lateral para centralizar melhor */
+    }
+    h1, .display-3 {
+        font-size: 4rem; /* Aumentei o tamanho do título */
+    }
+    .lead {
+        font-size: 2rem; /* Aumentei o tamanho do texto descritivo */
+    }
+    .custom-btn {
+        padding: 18px 35px; /* Aumentei o padding do botão */
+        font-size: 1.5rem; /* Aumentei o tamanho da fonte do botão */
+    }
+    .custom-btn i {
+        font-size: 1.8rem; /* Aumentei o ícone do botão */
+    }
+    .card-body {
+        padding: 25px; /* Mais espaço interno nos cards */
+    }
+    .card {
+        padding: 20px; /* Mais espaço externo nos cards */
     }
 }
 
