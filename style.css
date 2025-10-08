@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
     min-height: 100vh;
-    background-image: url('https://i.postimg.cc/zXjYYhpv/images.jpg'); /* Adicionei a imagem de fundo */
+    background-image: url('https://i.postimg.cc/zXjYYhpv/images.jpg'); /* Imagem de fundo */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@ body {
 
 .portfolio-bg {
     min-height: 100vh;
-    background: linear-gradient(120deg, rgba(30, 40, 70, 0.9) 0%, rgba(50, 70, 120, 0.9) 100%);
+    background: linear-gradient(120deg, rgba(30, 40, 70, 0.7) 0%, rgba(50, 70, 120, 0.7) 100%); /* Gradiente leve para melhor visibilidade */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,7 +89,11 @@ h1, .display-3 {
 }
 
 .github-btn {
-    margin-top: 40px;
+    margin-top: 20px; /* Reduzi o espaço para centralizar melhor */
+}
+
+.contact-btn {
+    margin-top: 20px; /* Mesmo espaçamento para consistência */
 }
 
 .d-flex img {
@@ -137,8 +141,8 @@ h1, .display-3 {
     .card-body {
         padding: 15px;
     }
-    img[alt="Gatinho"] {
-        max-width: 150px;
+    img[alt="Nova Imagem"] {
+        max-width: 100px;
         height: auto;
         margin: 0 auto;
     }
@@ -201,6 +205,20 @@ h1, .display-3 {
         margin-left: auto;
         margin-right: auto;
         max-width: 350px;
+        position: absolute; /* Centraliza verticalmente */
+        top: 50%; /* Meio da tela */
+        left: 50%; /* Meio da tela */
+        transform: translate(-50%, -50%); /* Ajusta para centro exato */
+    }
+    .contact-btn {
+        margin-top: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 350px;
+    }
+    img[alt="Nova Imagem"] {
+        max-width: 150px; /* Imagem pequena no PC */
     }
     #cat-img {
         max-width: 180px;
