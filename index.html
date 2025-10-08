@@ -1,101 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio KreedX</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KreeX.Dev - Portfólio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="portfolio-bg">
-        <div class="container py-5">
-            <!-- Seção de Apresentação -->
-            <div class="row align-items-center mb-5">
-                <div class="col-12 col-md-7">
-                    <h1 class="display-3 fw-bold text-light mb-4 animated fadeInDown text-hover">Olá, eu sou <span class="text-warning">KreedX</span> 👋</h1>
-                    <p class="lead text-light mb-4 animated fadeInUp text-hover">Sou programador apaixonado por tecnologia! Trabalho com desenvolvimento de sites, sistemas, jogos e automações, sempre buscando inovação e qualidade.</p>
-                    <div class="d-flex flex-wrap align-items-center gap-4 mb-4 animated zoomIn">
-                        <span title="JavaScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40" alt="JavaScript" class="img-fluid"></span>
-                        <span title="Java"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="40" height="40" alt="Java" class="img-fluid"></span>
-                        <span title="Python"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40" height="40" alt="Python" class="img-fluid"></span>
-                        <span title="C#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="40" height="40" alt="C#" class="img-fluid"></span>
-                        <span title="C++"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="40" height="40" alt="C++" class="img-fluid"></span>
-                        <span title="HTML5"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40" alt="HTML5" class="img-fluid"></span>
-                        <span title="CSS"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40" height="40" alt="CSS" class="img-fluid"></span>
-                    </div>
-                    <div class="text-center mb-5">
-                        <a href="https://github.com/KreedxMD" target="_blank" class="custom-btn animated pulse infinite github-btn">Meu GitHub <i class="bi bi-github"></i></a>
-                        <a href="#" class="custom-btn animated pulse infinite contact-btn mt-3">Contato</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-5 text-center mt-5 mt-md-0">
-                    <img src="https://via.placeholder.com/150" alt="Nova Imagem" class="img-fluid animated bounceIn" style="max-width: 150px; height: auto;">
-                </div>
-            </div>
+  <header>
+    <nav>
+      <div class="logo">KreeX.Dev</div>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <!-- Seção Sobre Mim -->
-            <div class="row mb-5">
-                <div class="col-12">
-                    <div class="card bg-dark text-light shadow-lg animated slideInLeft">
-                        <div class="card-body">
-                            <h5 class="card-title text-warning">Sobre mim</h5>
-                            <p class="card-text">Sou desenvolvedor fullstack com foco em criar soluções criativas. Desenvolvo sites responsivos, sistemas otimizados, automações eficientes, jogos interativos e bots para Discord. Tenho experiência com as principais linguagens do mercado e estou sempre aprendendo novas tecnologias.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Seção Meus Projetos -->
-            <div class="row mb-5">
-                <div class="col-12">
-                    <div class="card bg-dark text-light shadow-lg animated slideInRight">
-                        <div class="card-body">
-                            <h5 class="card-title text-warning">Meus Projetos</h5>
-                            <p class="card-text">Recentemente, finalizei um sistema de automação em Python que agiliza tarefas repetitivas e um jogo simples em C# usando Unity. Também criei um bot para Discord que organiza comunidades. Confira mais no meu GitHub!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Seção Contato -->
-            <div class="row mb-5" id="contact-section">
-                <div class="col-12">
-                    <div class="card bg-dark text-light shadow-lg animated fadeIn">
-                        <div class="card-body">
-                            <h5 class="card-title text-warning">Contato</h5>
-                            <p class="card-text">Quer colaborar ou saber mais? Envie um e-mail para <a href="mailto:kinastoque@gmail.com" class="text-info">kinastoque@gmail.com</a> ou me chame no Discord: <span class="text-info">kreedx7</span>.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Seção do Gato Animado no Final -->
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <h4 class="text-light animated fadeInUp">Meu mascote virtual!</h4>
-                    <img src="https://cataas.com/cat" alt="Gato Animado" class="img-fluid animated infinite bounce" id="animated-cat" style="max-width: 300px;">
-                </div>
-            </div>
+  <main>
+    <section id="projetos">
+      <h2>#Perfil</h2>
+      <div class="projects-container">
+        <!-- Card existente -->
+        <div class="project-card">
+          <div class="project-icon">⚙️</div>
+          <h3>otimiza</h3>
+          <p>Ligagem:</p>
+          <button class="project-btn">Abrir</button>
         </div>
+        <!-- Card existente -->
+        <div class="project-card">
+          <div class="project-icon">🌐</div>
+          <h3>Sit</h3>
+          <p>Esse e meu portifolio!!</p>
+          <p>Ligagem: HTML</p>
+          <button class="project-btn">Abrir</button>
+        </div>
+        <!-- Card existente -->
+        <div class="project-card">
+          <div class="project-icon">✅</div>
+          <h3>Verifica-o-</h3>
+          <p>Ligagem:</p>
+          <button class="project-btn">Abrir</button>
+        </div>
+        <!-- Novo card para GitHub -->
+        <div class="project-card">
+          <div class="project-icon">📂</div>
+          <h3>Meus Repositórios GitHub</h3>
+          <p>Confira meus projetos no GitHub</p>
+          <button id="github-btn" class="project-btn">Ver Repositórios</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal para repositórios GitHub -->
+  <div id="github-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Meus Repositórios</h2>
+      <div id="repos-container" class="repos-grid">
+        <p>Carregando...</p>
+      </div>
     </div>
+  </div>
 
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.js"></script>
-    <script src="index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
-    <script>
-        function updateCat() {
-            const catImg = document.getElementById('animated-cat');
-            const newCat = `https://cataas.com/cat?${new Date().getTime()}`;
-            catImg.src = newCat;
-        }
-        setInterval(updateCat, 5000);
-
-        document.querySelector('.contact-btn').addEventListener('click', function(e) {
-            e.preventDefault();
-            document.querySelector('#contact-section').scrollIntoView({ behavior: 'smooth' });
-        });
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>
