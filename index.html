@@ -26,11 +26,10 @@
                     </div>
                     <div class="text-center mb-5">
                         <a href="https://github.com/KreedxMD" target="_blank" class="custom-btn animated pulse infinite github-btn">Meu GitHub <i class="bi bi-github"></i></a>
-                        <a href="#" class="custom-btn animated pulse infinite contact-btn mt-3">Contato</a> <!-- Botão Contato -->
+                        <a href="#" class="custom-btn animated pulse infinite contact-btn mt-3">Contato</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-5 text-center mt-5 mt-md-0">
-                    <!-- Placeholder para nova imagem pequena (substitua o src pelo link da sua imagem) -->
                     <img src="https://via.placeholder.com/150" alt="Nova Imagem" class="img-fluid animated bounceIn" style="max-width: 150px; height: auto;">
                 </div>
             </div>
@@ -60,7 +59,7 @@
             </div>
 
             <!-- Seção Contato -->
-            <div class="row mb-5" id="contact-section"> <!-- Adicionei ID para rolagem -->
+            <div class="row mb-5" id="contact-section">
                 <div class="col-12">
                     <div class="card bg-dark text-light shadow-lg animated fadeIn">
                         <div class="card-body">
@@ -86,15 +85,13 @@
     <script src="index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
     <script>
-        // Função para atualizar o gato animado a cada 5 segundos
         function updateCat() {
             const catImg = document.getElementById('animated-cat');
-            const newCat = `https://cataas.com/cat?${new Date().getTime()}`; // Adiciona timestamp para forçar recarrega
+            const newCat = `https://cataas.com/cat?${new Date().getTime()}`;
             catImg.src = newCat;
         }
-        setInterval(updateCat, 5000); // Atualiza a cada 5 segundos
+        setInterval(updateCat, 5000);
 
-        // Função de rolagem para o botão Contato
         document.querySelector('.contact-btn').addEventListener('click', function(e) {
             e.preventDefault();
             document.querySelector('#contact-section').scrollIntoView({ behavior: 'smooth' });
