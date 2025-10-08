@@ -89,7 +89,7 @@ h1, .display-3 {
 }
 
 .github-btn {
-    margin-top: 20px; /* Adiciona espaço entre o botão e a descrição */
+    margin-top: 30px;
 }
 
 .d-flex img {
@@ -196,11 +196,14 @@ h1, .display-3 {
         padding: 25px;
     }
     .github-btn {
-        margin-top: 30px; /* Aumentei espaço no PC */
-        display: block; /* Garante que o botão ocupe a largura total e centralize */
-        margin-left: auto; /* Centraliza horizontalmente */
-        margin-right: auto; /* Centraliza horizontalmente */
-        max-width: 300px; /* Limita a largura para não esticar demais */
+        margin-top: 40px; /* Aumentei espaço no PC */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 350px; /* Aumentei para dar mais espaço ao botão */
+    }
+    #cat-img {
+        max-width: 180px; /* Reduzi ainda mais para evitar bugs no PC */
     }
 }
 
