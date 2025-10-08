@@ -3,10 +3,10 @@ body {
     padding: 0;
     font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
     min-height: 100vh;
-    background: linear-gradient(135deg, rgba(20, 30, 50, 0.8) 0%, rgba(40, 60, 100, 0.8) 100%), url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+    background-image: url('https://i.postimg.cc/zXjYYhpv/images.jpg'); /* Adicionei a imagem de fundo */
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     position: relative;
     overflow-x: hidden;
     color: #f0f0f0;
@@ -206,11 +206,11 @@ h1, .display-3 {
         max-width: 180px;
     }
     .card-text {
-        font-size: 1.8rem; /* Aumentei o tamanho do texto nas seções */
-        line-height: 1.6; /* Ajustei para melhor legibilidade */
+        font-size: 1.8rem;
+        line-height: 1.6;
     }
     .card-title {
-        font-size: 2.5rem; /* Aumentei o tamanho dos títulos das seções */
+        font-size: 2.5rem;
     }
 }
 
@@ -221,4 +221,4 @@ html {
 img {
     max-width: 100%;
     height: auto;
-                                }
+}
