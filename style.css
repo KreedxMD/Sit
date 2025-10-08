@@ -89,7 +89,7 @@ h1, .display-3 {
 }
 
 .github-btn {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .d-flex img {
@@ -196,14 +196,21 @@ h1, .display-3 {
         padding: 25px;
     }
     .github-btn {
-        margin-top: 40px; /* Aumentei espaço no PC */
+        margin-top: 40px;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        max-width: 350px; /* Aumentei para dar mais espaço ao botão */
+        max-width: 350px;
     }
     #cat-img {
-        max-width: 180px; /* Reduzi ainda mais para evitar bugs no PC */
+        max-width: 180px;
+    }
+    .card-text {
+        font-size: 1.8rem; /* Aumentei o tamanho do texto nas seções */
+        line-height: 1.6; /* Ajustei para melhor legibilidade */
+    }
+    .card-title {
+        font-size: 2.5rem; /* Aumentei o tamanho dos títulos das seções */
     }
 }
 
@@ -214,4 +221,4 @@ html {
 img {
     max-width: 100%;
     height: auto;
-}
+                                }
