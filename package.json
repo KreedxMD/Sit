@@ -1,18 +1,1 @@
-{
-  "name": "sit",
-  "version": "1.0.0",
-  "description": "Esse e meu portfólio!!",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "bootstrap": "^5.3.8",
-    "eslint": "^9.37.0",
-    "jquery": "^3.7.1",
-    "live-server": "^1.2.2"
-  }
-}
+
